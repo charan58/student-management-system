@@ -1,0 +1,44 @@
+.dashboard-header {
+  background: #1D4ED8; /* Indigo */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome-msg {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logout-button {
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logout-button:hover {
+  color: #d97706; 
+  transform: scale(1.05);
+}
+
+.school-name-title{
+  font-size: xx-large;
+}

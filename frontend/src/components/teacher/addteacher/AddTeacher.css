@@ -1,0 +1,84 @@
+@import '../../theme/AdminTheme.css';
+
+.add-teacher-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  font-family: var(--font-body);
+}
+
+.form-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+.form-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-layout input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-family: var(--font-body);
+}
+
+.teacher-submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.teacher-submit-btn:hover {
+  background-color: #1e40af;
+}
+
+.error-message {
+  color: var(--danger-color);
+  font-size: 13px;
+  margin-top: -10px;
+  margin-bottom: -6px;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  gap: 12px;
+  font-family: var(--font-body);
+}
+
+.pagination-controls button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.pagination-controls button:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-weight: 500;
+  color: var(--secondary-color);
+}

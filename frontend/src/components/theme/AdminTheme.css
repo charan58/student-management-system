@@ -1,0 +1,11 @@
+:root {
+  --primary-color: #1D4ED8;     /* Indigo */
+  --secondary-color: #4B5563;   /* Slate Gray */
+  --background-color: #F3F4F6;  /* Light Gray */
+  --accent-color: #F59E0B;      /* Amber */
+  --success-color: #10B981;     /* Green */
+  --danger-color: #EF4444;      /* Red */
+
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Roboto', sans-serif;
+}

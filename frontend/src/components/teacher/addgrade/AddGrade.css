@@ -1,0 +1,63 @@
+.add-grade-form {
+  max-width: 500px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-body);
+}
+
+.add-grade-form h2 {
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.input-error {
+  border-color: var(--danger-color);
+}
+
+.error {
+  color: var(--danger-color);
+  font-size: 13px;
+  margin-top: 5px;
+  display: block;
+}
+
+button[type="submit"] {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+
+button[type="submit"]:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+}

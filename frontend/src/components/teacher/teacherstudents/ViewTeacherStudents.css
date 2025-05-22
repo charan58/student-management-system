@@ -1,0 +1,86 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+
+.view-teacher-students {
+  padding: 2rem;
+  background-color: var(--background-color);
+  font-family: var(--font-body);
+}
+
+.view-teacher-students h1 {
+font-size: xx-large;
+  font-family: var(--font-heading);
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.students-table thead tr {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: left;
+}
+
+.students-table th,
+.students-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.students-table tbody tr:hover {
+  background-color: #f9fafb;
+}
+
+.students-table td {
+  color: var(--secondary-color);
+}
+
+.students-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .students-table,
+  .students-table thead,
+  .students-table tbody,
+  .students-table th,
+  .students-table td,
+  .students-table tr {
+    display: block;
+  }
+
+  .students-table thead {
+    display: none;
+  }
+
+  .students-table td {
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .students-table td::before {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    color: var(--secondary-color);
+  }
+
+  .students-table td:nth-of-type(1)::before { content: "Student ID"; }
+  .students-table td:nth-of-type(2)::before { content: "Student Name"; }
+  .students-table td:nth-of-type(3)::before { content: "Course Name"; }
+}

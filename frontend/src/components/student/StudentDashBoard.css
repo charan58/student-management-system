@@ -1,0 +1,84 @@
+.student-dashboard {
+  padding: 2rem;
+  background-color: #f3f4f6;
+  font-family: 'Roboto', sans-serif;
+}
+
+.dashboard-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  color: #1D4ED8;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.dashboard-widgets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.widget-card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  transition: transform 0.2s ease;
+  flex-direction: column;
+}
+
+.widget-card:hover {
+  transform: scale(1.02);
+}
+
+.widget-icon {
+  font-size: 26px;
+  color: #1D4ED8;
+  margin-bottom: 0.5rem;
+}
+
+.widget-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #4B5563;
+}
+
+.widget-card p,
+.widget-card li {
+  font-size: 14px;
+  color: #374151;
+  margin-bottom: 4px;
+}
+
+.course-list,
+.grade-list {
+  list-style-type: disc;
+  margin-left: 1rem;
+}
+
+.widget-card.action {
+  align-items: center;
+  text-align: center;
+}
+
+.dashboard-btn {
+  margin-top: 8px;
+  padding: 8px 16px;
+  background-color: #F59E0B;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.dashboard-btn:hover {
+  background-color: #D97706;
+  transform: scale(1.05);
+}

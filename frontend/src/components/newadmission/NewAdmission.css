@@ -1,0 +1,150 @@
+.new-admission-container {
+  position: relative;
+  background-color: #f3f4f6;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10px; 
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+/* Background Image */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.form-container {
+  position: relative;
+  z-index: 10;
+  width: 100%; 
+  max-width: 1200px; 
+  padding: 20px;
+}
+
+
+.form-card {
+  background-color: #ffffff;
+  padding: 1.5rem; 
+  border-radius: 1rem; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%; 
+  box-sizing: border-box; 
+}
+
+/* Form Title */
+.form-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 26px; 
+  font-weight: 700;
+  color: #1D4ED8; 
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.25rem; 
+}
+
+.form-group label {
+  font-size: 14px; 
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+  color: #4B5563;
+}
+
+/* Flexbox layout for fields */
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form-row > .half-width {
+  width: 48%; /* Ensure fields take up less than half of the screen */
+}
+
+.form-row > .full-width {
+  width: 100%; /* Full width for some fields */
+}
+
+/* Input and select styles */
+.form-group input,
+.form-group select {
+  width: 100%; /* Make inputs fill the entire width */
+  padding: 0.75rem;
+  font-size: 14px;
+  border: 1px solid #D1D5DB;
+  border-radius: 0.75rem;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #1D4ED8;
+  box-shadow: 0 0 0 2px rgba(29, 78, 216, 0.3);
+  outline: none;
+}
+
+/* File input style */
+.form-group input[type="file"] {
+  padding: 0.75rem;
+  font-size: 14px;
+}
+
+/* Image Preview */
+.image-preview {
+  margin-top: 8px;
+}
+
+.image-preview img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #1D4ED8;
+}
+
+/* Submit Button */
+.submit-btn {
+  text-align: center;
+}
+
+.submit-btn-primary {
+  background-color: #F59E0B; /* Amber */
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.submit-btn-primary:hover {
+  background-color: #F59E0B;
+  transform: scale(1.05);
+}
+
+.submit-btn-primary:focus {
+  outline: none;
+}
+
+/* Error message styling */
+.error-message {
+  color: #ff0000; /* Red color for error */
+  font-size: 0.875rem; /* Smaller font size */
+  margin-top: 5px;
+  font-weight: initial;
+  text-align: left;
+}
+

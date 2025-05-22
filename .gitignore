@@ -1,0 +1,18 @@
+# Frontend
+/frontend/node_modules/
+/frontend/dist/
+/frontend/.vite/
+*.log
+
+# Backend
+/backend/target/
+/backend/.idea/
+*.iml
+*.class
+
+# General
+.DS_Store
+.env
+*.sqlite
+*.bak
+*.swp
